@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Pitch app imc by firetester850</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/firetester850/Pitch_app_IMC">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Pitch app imc</h1>
+            <h2></h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/firetester850/Pitch_app_IMC/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/firetester850/Pitch_app_IMC/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h3>
+<a id="1-what-is-the-imc-" class="anchor" href="#1-what-is-the-imc-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1 What is the IMC ?</h3>
+
+<p>The IMC index (known in french as: Indice de Masse Corporelle) is a measure of body fat based on height and weight that applies to adult men and women.</p>
+
+<h3>
+<a id="2-why-do-you-need-to-calculate-your-imc-" class="anchor" href="#2-why-do-you-need-to-calculate-your-imc-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2 Why do you need to calculate your IMC ?</h3>
+
+<p>IMC indicator allows you evaluate the overall impact of your alimentation on your weight.
+It helps you to analyze how balanced your height is with your weight</p>
+
+<h3>
+<a id="3-how-is-calculated-the-imc-index-" class="anchor" href="#3-how-is-calculated-the-imc-index-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3 How is calculated the IMC index ?</h3>
+
+<p>index is calculated by dividing the weight in Kilogrammes by the square of the height in  meters as following for a weight of 70kg and a height of 1.78m :</p>
+
+<div class="highlight highlight-source-r"><pre><span class="pl-v">weight</span><span class="pl-k">=</span><span class="pl-c1">70</span>
+<span class="pl-v">height</span><span class="pl-k">=</span><span class="pl-c1">1.78</span>
+<span class="pl-smi">IMC_value</span><span class="pl-k">&lt;-</span><span class="pl-smi">weight</span><span class="pl-k">/</span>(<span class="pl-smi">height</span><span class="pl-k">^</span><span class="pl-c1">2</span>)
+print(<span class="pl-smi">IMC_value</span>)</pre></div>
+
+<h3>
+<a id="4-why-is-the-imc_app-shiny-app-useful-" class="anchor" href="#4-why-is-the-imc_app-shiny-app-useful-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4 Why is the IMC_app shiny app useful ?</h3>
+
+<p>shiny app IMC_app not only calculated your IMC, it also analyze this result
+In our case, IMC_app will tells you wether you have a normal weight or if you are underweight overweight or in the extreme situation of obesity. 
+e.g. :</p>
+
+<div class="highlight highlight-source-r"><pre><span class="pl-v">weight</span><span class="pl-k">=</span><span class="pl-c1">70</span>
+<span class="pl-v">height</span><span class="pl-k">=</span><span class="pl-c1">1.78</span>
+<span class="pl-smi">IMC_value</span><span class="pl-k">&lt;-</span><span class="pl-smi">weight</span><span class="pl-k">/</span>(<span class="pl-smi">height</span><span class="pl-k">^</span><span class="pl-c1">2</span>)
+print(<span class="pl-s"><span class="pl-pds">'</span>your IMC is:<span class="pl-pds">'</span></span>)
+print(<span class="pl-smi">IMC_value</span>)
+print(<span class="pl-s"><span class="pl-pds">'</span>That means you have a normal weight<span class="pl-pds">'</span></span>)</pre></div>
+
+<h3>
+<a id="5-where-to-find-imc_app-" class="anchor" href="#5-where-to-find-imc_app-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5 where to find IMC_app ?</h3>
+
+<p>you can use IMCapp for free on <a href="https://spoutnik365.shinyapps.io/app_IMC/">https://spoutnik365.shinyapps.io/app_IMC/</a> </p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/firetester850">firetester850</a> can be found on <a href="https://github.com/firetester850/Pitch_app_IMC">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
